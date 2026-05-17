@@ -1,0 +1,13 @@
+https://auth.deriv.com/oauth2/auth?
+  response_type=code
+  &client_id={YOUR_CLIENT_ID}          # e.g. app12345
+  &redirect_uri={YOUR_REDIRECT_URI}    # e.g. https://yourapp.com/callback
+  &scope=trade+account_manage
+  &state={RANDOM_STATE}                # e.g. abc123random
+  &code_challenge={PKCE_CHALLENGE}     # e.g. E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM
+  &code_challenge_method=S256
+  &prompt=registration
+  &t={YOUR_TRACKING_TOKEN}             # or: affiliate_token | sidi | ca — use the name from your referral link
+  &utm_campaign={YOUR_CAMPAIGN}        # e.g. dynamicworks
+  &utm_medium=affiliate
+  &utm_source={YOUR_AFFILIATE_ID}      # e.g. CU303219
